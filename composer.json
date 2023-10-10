@@ -1,0 +1,35 @@
+{
+    "name": "sglinka95/football-score-board",
+    "description": "A PHP library for Football World Cup Score Board",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Glinka",
+            "email": "sglinka95@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sglinka95\\FootballScoreBoard\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4",
+        "vimeo/psalm": "^5.15"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sglinka95\\FootballScoreBoard\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "psalm": "vendor/bin/psalm --no-cache --no-file-cache"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
